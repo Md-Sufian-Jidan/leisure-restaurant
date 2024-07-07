@@ -1,25 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
+* {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
-    font-family: "Raleway", sans-serif;
-};
-
-html, body {
-    width: 100%;
-    height: 100%;
-};
+}
 
 .main-container {
-    max-width: 2000px;
+    max-width: 1500px;
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
-    padding: 0 10%;
     position: relative;
+    padding: 0px 10%;
     overflow: hidden;
-};
+}
+
+.background {
+    width: 35%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background: url("images/right-img.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 100% 0 0 100% / 100% 0 0 100%;
+    transform: scaleY(1.1);
+}
+
+.decor {
+    height: 50%;
+    position: absolute;
+    right: 1%;
+    border-radius: 100% 0 0 100% / 100% 0% 0% 100%;
+}
+
+.navbar {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 10px;
+}
+
+.main-logo {
+    width: 70px;
+}
+
+.main-logo img {
+    width: 100%;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar ul li {
+    display: inline-block;   
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.navbar ul li a:hover, .navbar ul li .active {
+    color: royalblue;
+}
